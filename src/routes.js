@@ -26,7 +26,7 @@ module.exports = (app) =>{
 
     app.get('/filtro/:nome',
     NoticiasController.filtro)
-
+// teste
     app.get('/resultado/:nome',
     NoticiasController.resultado)
 

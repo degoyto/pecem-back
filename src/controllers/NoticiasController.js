@@ -42,9 +42,12 @@ module.exports = {
       const Op = Sequelize.Op;
       const noticia = await Noticia.findAll({
         limit: 3,
+        
         where:{
-          id:{[Op.ne]:exceto} 
-        }
+          id:{[Op.ne]:exceto},
+          destaque:1
+        },
+        order: [['createdAt', 'DESC']],
       })
       res.send(noticia)
     } catch (err) {
