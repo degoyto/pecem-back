@@ -3,9 +3,9 @@ require('dotenv').config();
 const express = require ("express")
 const bodyParser = require("body-parser")
 const cors = require ("cors")
-const {sequelize} = require("./models")
+const {sequelize} = require("./src/models")
 const Sequelize = require("sequelize")
-const config = require("./config/config")
+const config = require("./src/config/config")
 const morgan = require("morgan")
 
 
@@ -20,7 +20,7 @@ app.use(cors())
 
 
 //Rotas
-    require("./routes")(app)
+    require("./src/routes")(app)
 
 sequelize.sync({force:false}).then(()=>{
     app.listen(process.env.PORT || 3000, function(){
