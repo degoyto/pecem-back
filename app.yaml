@@ -1,2 +1,11 @@
 runtime: nodejs
 env: flex
+env_variables:
+  AWS_ACCESS_ID: 'AKIA4WPIBSNZ2K473I43'
+  AWS_DEFAULT_REGION: 'us-east-1'
+  AWS_SECRET_ACCESS_KEY: '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'
+  DB_NAME: 'noticiaspecem'
+  DB_PASS: 'GIGANTE1@ff1'
+  DB_USER: 'jppecem'
+  DIALECT: 'mysql'
+  HOST: 'noticiaspecem.mysql.uhserver.com'
