@@ -1,14 +1,14 @@
 module.exports = {
     // teste
     
-    port: process.env.PORT || 8081,
+    port: process.env.PORT,
     db:{
-        database: process.env.DB_NAME || "teste",
-        user: process.env.DB_USER || "root",
-        password: process.env.DB_PASS || "root",
+        database: process.env.DB_NAME,
+        user: process.env.DB_USER,
+        password: "GIGANTE1@ff1" ,
         options:{ 
-            dialect: process.env.DIALECT || "mysql",
-            host: process.env.HOST || "localhost",
+            dialect: process.env.DIALECT,
+            host: process.env.HOST,
             storage:".tabtracker.sql"
         }
     },
