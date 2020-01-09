@@ -41,7 +41,7 @@ module.exports = {
       const exceto = parseInt(req.params.exceto)
       const Op = Sequelize.Op;
       const noticia = await Noticia.findAll({
-        limit: 3,
+        limit: 4,
         
         where:{
           id:{[Op.ne]:exceto},
